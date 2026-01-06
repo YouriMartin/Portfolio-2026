@@ -1,0 +1,123 @@
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: var(--win95-gray);
+  border-top: 2px solid var(--win95-white);
+  display: flex;
+  align-items: center;
+  padding: 2px 2px 2px 4px;
+  z-index: 10000;
+}
+
+.startButton {
+  height: 32px;
+  padding: 0 8px;
+  background-color: var(--win95-gray);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: var(--win95-white);
+  border-left-color: var(--win95-white);
+  border-right-color: var(--win95-shadow-dark);
+  border-bottom-color: var(--win95-shadow-dark);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 11px;
+  margin-right: 4px;
+}
+
+.startButton:active {
+  border-top-color: var(--win95-shadow-dark);
+  border-left-color: var(--win95-shadow-dark);
+  border-right-color: var(--win95-white);
+  border-bottom-color: var(--win95-white);
+  padding-left: 9px;
+  padding-top: 1px;
+}
+
+.startIcon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.startText {
+  line-height: 1;
+}
+
+.taskList {
+  flex: 1;
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.taskList::-webkit-scrollbar {
+  height: 0;
+}
+
+.taskButton {
+  height: 32px;
+  min-width: 150px;
+  max-width: 200px;
+  padding: 0 8px;
+  background-color: var(--win95-gray);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: var(--win95-white);
+  border-left-color: var(--win95-white);
+  border-right-color: var(--win95-shadow-dark);
+  border-bottom-color: var(--win95-shadow-dark);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.taskButton:active,
+.taskButton.active {
+  border-top-color: var(--win95-shadow-dark);
+  border-left-color: var(--win95-shadow-dark);
+  border-right-color: var(--win95-white);
+  border-bottom-color: var(--win95-white);
+}
+
+.taskIcon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.taskTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tray {
+  height: 32px;
+  margin-left: 4px;
+  padding: 0 8px;
+  background-color: var(--win95-gray);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: var(--win95-shadow-dark);
+  border-left-color: var(--win95-shadow-dark);
+  border-right-color: var(--win95-white);
+  border-bottom-color: var(--win95-white);
+  display: flex;
+  align-items: center;
+}
+
+.clock {
+  font-size: 11px;
+  font-family: var(--font-system);
+  min-width: 40px;
+  text-align: center;
+}
