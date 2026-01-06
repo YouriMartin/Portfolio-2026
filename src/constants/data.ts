@@ -1,11 +1,11 @@
 import { CVData, BookItem, SkillCategory, SocialLink } from '@/types';
 
 export const CV_DATA: CVData = {
-  name: 'Your Name',
+  name: 'Youri MARTIN',
   title: 'Full Stack Developer',
   contact: {
-    email: 'contact@example.com',
-    location: 'Paris, France'
+    email: 'youri.dev.martin@gmail.com',
+    location: 'Rennes, France'
   },
   summary: 'Passionate developer with expertise in modern web technologies and clean code practices.',
   experience: [
