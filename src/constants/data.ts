@@ -180,8 +180,8 @@ export const SKILLS_DATA: SkillCategory[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
     {
         platform: 'github',
-        url: 'https://github.com/yourusername',
-        username: 'yourusername'
+        url: 'https://github.com/yourimartin',
+        username: 'YouriMartin'
     },
     {
         platform: 'linkedin',
