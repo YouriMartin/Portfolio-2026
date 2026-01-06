@@ -6,6 +6,8 @@ const nextConfig = {
   
   // Security headers
   async headers() {
+    const isDev = process.env.NODE_ENV === 'development';
+    
     return [
       {
         source: '/:path*',
@@ -42,12 +44,18 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-eval' 'unsafe-inline'",
+              isDev 
+                ? "script-src 'self' 'unsafe-eval' 'unsafe-inline'" 
+                : "script-src 'self'",
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: https:",
               "font-src 'self' data:",
-              "connect-src 'self'",
-              "frame-ancestors 'none'"
+              isDev
+                ? "connect-src 'self' ws: wss:"
+                : "connect-src 'self'",
+              "frame-ancestors 'none'",
+              "base-uri 'self'",
+              "form-action 'self'"
             ].join('; ')
           }
         ]
