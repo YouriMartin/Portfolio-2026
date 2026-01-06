@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import '@/styles/globals.css';
 
 export const metadata: Metadata = {
@@ -6,8 +6,12 @@ export const metadata: Metadata = {
   description: 'A portfolio website with Windows 95 aesthetic featuring CV, library, skills, and professional links',
   keywords: ['portfolio', 'CV', 'developer', 'Windows 95'],
   authors: [{ name: 'Portfolio Owner' }],
-  viewport: 'width=device-width, initial-scale=1',
-  robots: 'index, follow',
+  robots: 'index, follow'
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
   themeColor: '#008080'
 };
 
