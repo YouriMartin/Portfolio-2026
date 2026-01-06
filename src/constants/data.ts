@@ -1,4 +1,4 @@
-import {CVData, SkillCategory, SocialLink} from '@/types';
+import {BookItem, CVData, SkillCategory, SocialLink} from '@/types';
 
 export const CV_DATA: CVData = {
     name: 'Youri Martin',
@@ -70,10 +70,10 @@ Experienced in building complex, secure, and scalable web applications on both b
         }
     ],
     skills: [
-        'Java',
-        'Spring Boot',
         'NestJS',
         'Node.js',
+        'Java',
+        'Spring Boot',
         'Express.js',
         'React',
         'Angular',
@@ -87,6 +87,18 @@ Experienced in building complex, secure, and scalable web applications on both b
         'Microservices'
     ]
 };
+
+export const LIBRARY_DATA: BookItem[] = [
+    {
+        id: '1',
+        title: 'The Art of Computer Programming',
+        author: '',
+        type: 'book',
+        year: 1968,
+        description: 'The first book on computer programming, published in 1968.',
+        tags: ['programming', 'algorithms', 'data structures']
+    },
+]
 
 export const SKILLS_DATA: SkillCategory[] = [
     {
@@ -167,14 +179,6 @@ export const SKILLS_DATA: SkillCategory[] = [
             }
         ]
     },
-    {
-        category: 'Other',
-        skills: [
-            {name: 'English', level: 'intermediate', description: 'Technical English'},
-            {name: 'LSF', level: 'beginner', description: 'French Sign Language'},
-            {name: 'Self-hosted AI', level: 'intermediate', description: 'Self-hosted AI deployment'}
-        ]
-    }
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
