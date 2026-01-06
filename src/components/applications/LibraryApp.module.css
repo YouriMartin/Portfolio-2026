@@ -1,0 +1,142 @@
+.libraryContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: var(--font-system);
+}
+
+.toolbar {
+  display: flex;
+  gap: 4px;
+  padding: 8px;
+  background-color: var(--win95-gray);
+  border-bottom: 2px solid var(--win95-dark-gray);
+}
+
+.filterButton {
+  padding: 4px 12px;
+  background-color: var(--win95-gray);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: var(--win95-white);
+  border-left-color: var(--win95-white);
+  border-right-color: var(--win95-shadow-dark);
+  border-bottom-color: var(--win95-shadow-dark);
+  cursor: pointer;
+  font-size: 11px;
+  font-family: var(--font-system);
+}
+
+.filterButton:hover {
+  background-color: var(--win95-light-gray);
+}
+
+.filterButton.active {
+  border-top-color: var(--win95-shadow-dark);
+  border-left-color: var(--win95-shadow-dark);
+  border-right-color: var(--win95-white);
+  border-bottom-color: var(--win95-white);
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.list {
+  width: 300px;
+  overflow-y: auto;
+  border-right: 2px solid var(--win95-dark-gray);
+  background-color: var(--win95-white);
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--win95-light-gray);
+}
+
+.listItem:hover {
+  background-color: var(--win95-light-gray);
+}
+
+.listItem.selected {
+  background-color: var(--win95-blue);
+  color: var(--win95-white);
+}
+
+.itemIcon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.itemInfo {
+  flex: 1;
+  overflow: hidden;
+}
+
+.itemTitle {
+  font-weight: bold;
+  font-size: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.itemAuthor {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.details {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: var(--win95-white);
+}
+
+.detailsTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--win95-blue);
+}
+
+.detailsAuthor,
+.detailsYear,
+.detailsType {
+  font-size: 11px;
+  margin-bottom: 4px;
+  color: var(--win95-dark-gray);
+}
+
+.detailsDescription {
+  margin: 16px 0;
+  line-height: 1.4;
+}
+
+.tags {
+  margin: 16px 0;
+  font-size: 11px;
+}
+
+.tag {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 2px 8px;
+  background-color: var(--win95-gray);
+  border: 1px solid var(--win95-dark-gray);
+}
+
+.link {
+  margin-top: 16px;
+}
+
+.link a {
+  color: var(--win95-blue-highlight);
+  text-decoration: underline;
+}

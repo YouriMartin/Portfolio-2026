@@ -1,0 +1,82 @@
+.skillsContainer {
+  padding: 16px;
+  font-family: var(--font-system);
+}
+
+.mainTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--win95-blue);
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--win95-dark-gray);
+}
+
+.category {
+  margin-bottom: 24px;
+}
+
+.categoryTitle {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  padding: 4px 8px;
+  background-color: var(--win95-blue);
+  color: var(--win95-white);
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.skillCard {
+  padding: 12px;
+  background-color: var(--win95-light-gray);
+  border: 2px solid;
+  border-color: var(--win95-white) var(--win95-shadow-dark) var(--win95-shadow-dark) var(--win95-white);
+}
+
+.skillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 8px;
+}
+
+.skillName {
+  font-weight: bold;
+  font-size: 12px;
+  flex: 1;
+}
+
+.skillLevel {
+  font-size: 9px;
+  padding: 2px 6px;
+  border: 1px solid var(--win95-dark-gray);
+  white-space: nowrap;
+}
+
+.skillLevel.beginner {
+  background-color: #ffcccc;
+}
+
+.skillLevel.intermediate {
+  background-color: #ffffcc;
+}
+
+.skillLevel.advanced {
+  background-color: #ccffcc;
+}
+
+.skillLevel.expert {
+  background-color: #ccccff;
+}
+
+.skillDescription {
+  font-size: 10px;
+  line-height: 1.4;
+  color: var(--win95-dark-gray);
+}

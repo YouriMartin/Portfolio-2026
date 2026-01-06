@@ -1,0 +1,84 @@
+.linksContainer {
+  padding: 16px;
+  font-family: var(--font-system);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--win95-blue);
+}
+
+.description {
+  font-size: 11px;
+  margin-bottom: 20px;
+  color: var(--win95-dark-gray);
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.linkCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--win95-light-gray);
+  border: 2px solid;
+  border-color: var(--win95-white) var(--win95-shadow-dark) var(--win95-shadow-dark) var(--win95-white);
+}
+
+.linkIcon {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.linkInfo {
+  flex: 1;
+}
+
+.platformName {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: var(--win95-black);
+}
+
+.username {
+  font-size: 11px;
+  margin-bottom: 12px;
+  color: var(--win95-dark-gray);
+}
+
+.linkButton {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: var(--win95-gray);
+  border-style: solid;
+  border-width: 2px;
+  border-top-color: var(--win95-white);
+  border-left-color: var(--win95-white);
+  border-right-color: var(--win95-shadow-dark);
+  border-bottom-color: var(--win95-shadow-dark);
+  text-decoration: none;
+  color: var(--win95-black);
+  font-size: 11px;
+  cursor: pointer;
+  font-family: var(--font-system);
+}
+
+.linkButton:hover {
+  background-color: var(--win95-light-gray);
+}
+
+.linkButton:active {
+  border-top-color: var(--win95-shadow-dark);
+  border-left-color: var(--win95-shadow-dark);
+  border-right-color: var(--win95-white);
+  border-bottom-color: var(--win95-white);
+  padding: 5px 11px 3px 13px;
+}
